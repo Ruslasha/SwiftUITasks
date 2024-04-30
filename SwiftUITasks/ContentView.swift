@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isToggle = false
-    @State var balance = 50000.00
-    
+    @State var inBalanceUp = false
+    @State var showSendAlert = false
+    @State var balance = 50000
+    @State var balanceSecond = 0
+
     var body: some View {
         VStack {
             ZStack {
@@ -31,8 +34,22 @@ struct ContentView: View {
     var backView: some View {
         HStack {
             VStack {
-                Text("One")
-                Text("Two")
+                VStack(alignment: .leading) {
+                    Text("\(balance),00 ₽")
+                        .font(.title3)
+                        .bold()
+                        .foregroundColor(.black)
+                    Text("MIR  **0001")
+                    Divider()
+                }
+                VStack(alignment: .leading) {
+                    Text("\(balanceSecond),00 ₽")
+                        .font(.title3)
+                        .bold()
+                        .foregroundColor(.black)
+                    Text("MIR  **0002")
+                    Divider()
+                }
             }
             Spacer()
         }
@@ -62,41 +79,71 @@ struct ContentView: View {
                 .frame(height: 88)
                 .padding(14)
             HStack {
-                VStack {
-                    Image("Up")
-                    Button(action: {
-                        self.balance = balance + 1000
-                    }, label: {
-                        Text("Пополнить")
-                            .frame(height: 40)
-                            .foregroundColor(.black)
-                    })
-                }
-                .frame(height: 88)
+
+                upBalanceView
                 Spacer().frame(width: 35)
-                VStack {
-                    Image("Send")
-                    Button(action: {
-                        self.balance = balance - 1000
-                    }, label: {
-                        Text("Перевести")
-                            .frame(height: 40)
-                            .foregroundColor(.black)
-                    })
-                }
-                .frame(height: 88)
+                upBalanceCardView
                 Spacer().frame(width: 50)
-                VStack {
-                    Image("OpenCard")
-                    Text("Открыть \n карту")
-                }
-                .frame(height: 88)
+                openCardView
             }
             .offset(x: isToggle ? 176 : 0)
 
         }
         .frame(height: 88)
 
+    }
+
+    var upBalanceView: some View {
+        VStack {
+            Image("Up")
+            Button(action: {
+                self.balance = balance + 1000
+                self.inBalanceUp = true
+            }, label: {
+                Text("Пополнить")
+                    .frame(height: 40)
+                    .foregroundColor(.black)
+            }).actionSheet(isPresented: $inBalanceUp, content: {
+                ActionSheet(title: Text("Пополнение"), buttons: [.default(Text("Баланс успешно пополнен"), action: {
+                    print("Hello")
+                })])
+
+            })
+        }
+        .frame(height: 88)
+    }
+
+    let openCardView: some View = VStack {
+        Image("OpenCard")
+        Text("Открыть \n карту")
+    }
+        .frame(height: 88)
+
+    var upBalanceCardView: some View {
+        VStack {
+            Image("Send")
+            Button(action: {
+                self.balance = balance - 1000
+                self.showSendAlert = true
+            }, label: {
+                Text("Перевести")
+                    .frame(height: 40)
+                    .foregroundColor(.black)
+            }).alert(isPresented: $showSendAlert) {
+                Alert(title: Text("Перевод"),
+                      message: Text("Перевести 1000 руб на карту 2?"),
+                      primaryButton: .cancel(Text("ОК"), action: {
+                    self.balanceSecond = balanceSecond + 1000
+                    print(balanceSecond)
+                }),
+                      secondaryButton: .default(Text("Отмена"),
+                                                action: {
+                    print("Отмена")
+                }))
+            }
+
+        }
+        .frame(height: 88)
     }
 
     var cardView: some View {
@@ -112,7 +159,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                         .frame(width: 32)
-                    Text("\(balance) Р")
+                    Text("\(balance),00 ₽")
                         .font(.title2)
                         .foregroundColor(.white)
                         .offset(x: isToggle ? 176 : 0)
