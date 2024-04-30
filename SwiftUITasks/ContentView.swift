@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State var isToggle = false
     @State var balance = 50000.00
+    
     var body: some View {
         VStack {
             ZStack {
