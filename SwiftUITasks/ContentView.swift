@@ -50,6 +50,7 @@ struct ContentView: View {
                     Text("MIR  **0002")
                     Divider()
                 }
+                Spacer()
             }
             Spacer()
         }
