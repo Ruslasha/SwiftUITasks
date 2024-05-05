@@ -11,6 +11,10 @@
 		44B2C80B2BDF9E6300526038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2C80A2BDF9E6300526038 /* ContentView.swift */; };
 		44B2C80D2BDF9E6500526038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B2C80C2BDF9E6500526038 /* Assets.xcassets */; };
 		44B2C8102BDF9E6500526038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B2C80F2BDF9E6500526038 /* Preview Assets.xcassets */; };
+		44F466732BE4201200AA604A /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F466722BE4201200AA604A /* MusicModel.swift */; };
+		44F466752BE4202400AA604A /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F466742BE4202400AA604A /* PlayerViewModel.swift */; };
+		44F95DF42BE51E6E00A70566 /* Stressed Out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44F95DF32BE51E6E00A70566 /* Stressed Out.mp3 */; };
+		44F95DF62BE520F700A70566 /* Heathens.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44F95DF52BE520F700A70566 /* Heathens.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		44B2C80A2BDF9E6300526038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44B2C80C2BDF9E6500526038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44B2C80F2BDF9E6500526038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44F466722BE4201200AA604A /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
+		44F466742BE4202400AA604A /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		44F95DF32BE51E6E00A70566 /* Stressed Out.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stressed Out.mp3"; sourceTree = "<group>"; };
+		44F95DF52BE520F700A70566 /* Heathens.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Heathens.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 				44B2C80A2BDF9E6300526038 /* ContentView.swift */,
 				44B2C80C2BDF9E6500526038 /* Assets.xcassets */,
 				44B2C80E2BDF9E6500526038 /* Preview Content */,
+				44F466722BE4201200AA604A /* MusicModel.swift */,
+				44F466742BE4202400AA604A /* PlayerViewModel.swift */,
+				44F95DF32BE51E6E00A70566 /* Stressed Out.mp3 */,
+				44F95DF52BE520F700A70566 /* Heathens.mp3 */,
 			);
 			path = SwiftUITasks;
 			sourceTree = "<group>";
@@ -125,7 +137,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44F95DF42BE51E6E00A70566 /* Stressed Out.mp3 in Resources */,
 				44B2C8102BDF9E6500526038 /* Preview Assets.xcassets in Resources */,
+				44F95DF62BE520F700A70566 /* Heathens.mp3 in Resources */,
 				44B2C80D2BDF9E6500526038 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				44B2C80B2BDF9E6300526038 /* ContentView.swift in Sources */,
+				44F466752BE4202400AA604A /* PlayerViewModel.swift in Sources */,
 				44B2C8092BDF9E6300526038 /* SwiftUITasksApp.swift in Sources */,
+				44F466732BE4201200AA604A /* MusicModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
