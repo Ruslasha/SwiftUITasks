@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441068342BE7BC30003C3C07 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441068332BE7BC30003C3C07 /* Car.swift */; };
+		441068362BE7BC58003C3C07 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441068352BE7BC58003C3C07 /* CarViewModel.swift */; };
+		441068382BE7BD48003C3C07 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441068372BE7BD48003C3C07 /* ActivityView.swift */; };
 		44B2C8092BDF9E6300526038 /* SwiftUITasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2C8082BDF9E6300526038 /* SwiftUITasksApp.swift */; };
 		44B2C80B2BDF9E6300526038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2C80A2BDF9E6300526038 /* ContentView.swift */; };
 		44B2C80D2BDF9E6500526038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B2C80C2BDF9E6500526038 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441068332BE7BC30003C3C07 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		441068352BE7BC58003C3C07 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		441068372BE7BD48003C3C07 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		44B2C8052BDF9E6300526038 /* SwiftUITasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B2C8082BDF9E6300526038 /* SwiftUITasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITasksApp.swift; sourceTree = "<group>"; };
 		44B2C80A2BDF9E6300526038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +61,9 @@
 				44B2C80A2BDF9E6300526038 /* ContentView.swift */,
 				44B2C80C2BDF9E6500526038 /* Assets.xcassets */,
 				44B2C80E2BDF9E6500526038 /* Preview Content */,
+				441068332BE7BC30003C3C07 /* Car.swift */,
+				441068352BE7BC58003C3C07 /* CarViewModel.swift */,
+				441068372BE7BD48003C3C07 /* ActivityView.swift */,
 			);
 			path = SwiftUITasks;
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			files = (
 				44B2C80B2BDF9E6300526038 /* ContentView.swift in Sources */,
 				44B2C8092BDF9E6300526038 /* SwiftUITasksApp.swift in Sources */,
+				441068342BE7BC30003C3C07 /* Car.swift in Sources */,
+				441068382BE7BD48003C3C07 /* ActivityView.swift in Sources */,
+				441068362BE7BC58003C3C07 /* CarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
