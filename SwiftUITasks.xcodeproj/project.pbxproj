@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		447E0D0C2BE800B300DD7EA9 /* VPNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0D0B2BE800B300DD7EA9 /* VPNView.swift */; };
+		447E0D0E2BE803DA00DD7EA9 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0D0D2BE803DA00DD7EA9 /* PurchaseView.swift */; };
+		447E0D102BE8045700DD7EA9 /* VPN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0D0F2BE8045700DD7EA9 /* VPN.swift */; };
+		447E0D122BE804FD00DD7EA9 /* VPNViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0D112BE804FD00DD7EA9 /* VPNViewModel.swift */; };
+		447E0D142BE8074B00DD7EA9 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E0D132BE8074B00DD7EA9 /* BasketView.swift */; };
 		44B2C8092BDF9E6300526038 /* SwiftUITasksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2C8082BDF9E6300526038 /* SwiftUITasksApp.swift */; };
-		44B2C80B2BDF9E6300526038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2C80A2BDF9E6300526038 /* ContentView.swift */; };
+		44B2C80B2BDF9E6300526038 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B2C80A2BDF9E6300526038 /* MainTabView.swift */; };
 		44B2C80D2BDF9E6500526038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B2C80C2BDF9E6500526038 /* Assets.xcassets */; };
 		44B2C8102BDF9E6500526038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44B2C80F2BDF9E6500526038 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		447E0D0B2BE800B300DD7EA9 /* VPNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNView.swift; sourceTree = "<group>"; };
+		447E0D0D2BE803DA00DD7EA9 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		447E0D0F2BE8045700DD7EA9 /* VPN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPN.swift; sourceTree = "<group>"; };
+		447E0D112BE804FD00DD7EA9 /* VPNViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNViewModel.swift; sourceTree = "<group>"; };
+		447E0D132BE8074B00DD7EA9 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
 		44B2C8052BDF9E6300526038 /* SwiftUITasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44B2C8082BDF9E6300526038 /* SwiftUITasksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITasksApp.swift; sourceTree = "<group>"; };
-		44B2C80A2BDF9E6300526038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44B2C80A2BDF9E6300526038 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		44B2C80C2BDF9E6500526038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44B2C80F2BDF9E6500526038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,9 +62,14 @@
 			isa = PBXGroup;
 			children = (
 				44B2C8082BDF9E6300526038 /* SwiftUITasksApp.swift */,
-				44B2C80A2BDF9E6300526038 /* ContentView.swift */,
+				44B2C80A2BDF9E6300526038 /* MainTabView.swift */,
 				44B2C80C2BDF9E6500526038 /* Assets.xcassets */,
 				44B2C80E2BDF9E6500526038 /* Preview Content */,
+				447E0D0B2BE800B300DD7EA9 /* VPNView.swift */,
+				447E0D0D2BE803DA00DD7EA9 /* PurchaseView.swift */,
+				447E0D0F2BE8045700DD7EA9 /* VPN.swift */,
+				447E0D112BE804FD00DD7EA9 /* VPNViewModel.swift */,
+				447E0D132BE8074B00DD7EA9 /* BasketView.swift */,
 			);
 			path = SwiftUITasks;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B2C80B2BDF9E6300526038 /* ContentView.swift in Sources */,
+				447E0D0C2BE800B300DD7EA9 /* VPNView.swift in Sources */,
+				447E0D122BE804FD00DD7EA9 /* VPNViewModel.swift in Sources */,
+				44B2C80B2BDF9E6300526038 /* MainTabView.swift in Sources */,
+				447E0D102BE8045700DD7EA9 /* VPN.swift in Sources */,
 				44B2C8092BDF9E6300526038 /* SwiftUITasksApp.swift in Sources */,
+				447E0D142BE8074B00DD7EA9 /* BasketView.swift in Sources */,
+				447E0D0E2BE803DA00DD7EA9 /* PurchaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
